@@ -520,3 +520,10 @@ button.wa-fab{border:0;cursor:pointer}
 .wa-send{background:#25d366;color:#fff;min-height:44px;font-size:14px}
 .wa-send:hover{background:#1fb959}
 .wa-alt{font-size:13px;font-weight:700;color:var(--green-2);text-align:center}
+/* full photo gallery */
+.gallery2{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.gallery2 figure{margin:0;border-radius:16px;overflow:hidden;position:relative;aspect-ratio:4/3;background:var(--paper)}
+.gallery2 img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--glide)}
+.gallery2 figure:hover img{transform:scale(1.05)}
+.gallery2 figcaption{position:absolute;left:10px;bottom:10px;background:rgba(15,59,43,.82);color:var(--white);font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px}
+@media (max-width:480px){.gallery2{grid-template-columns:1fr 1fr;gap:8px}.gallery2 figcaption{font-size:11.5px}}

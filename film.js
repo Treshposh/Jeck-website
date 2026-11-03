@@ -64,11 +64,11 @@ void main(){
     let dead=false,running=false,paused=reduce,clock=0,last=performance.now(),visible=true;
     const setBtn=()=>{el.classList.toggle('paused',paused);btn.setAttribute('aria-label',paused?'Play film':'Pause film');};setBtn();
     btn.addEventListener('click',()=>{paused=!paused;setBtn();last=performance.now();});
-    if(!gl){el.classList.add('film-nogl');cssFallback();return {destroy(){}};}
+    if(!gl){el.classList.add('film-nogl');cssFallback();return {count:1,index:()=>0,goTo(){},next(){},prev(){},destroy(){}};}
 
     const sh=(t,src)=>{const s=gl.createShader(t);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)){console.warn(gl.getShaderInfoLog(s));return null;}return s;};
     const prog=gl.createProgram();const vs=sh(gl.VERTEX_SHADER,VS),fs=sh(gl.FRAGMENT_SHADER,FS);
-    if(!vs||!fs){el.classList.add('film-nogl');cssFallback();return {destroy(){}};}
+    if(!vs||!fs){el.classList.add('film-nogl');cssFallback();return {count:1,index:()=>0,goTo(){},next(){},prev(){},destroy(){}};}
     gl.attachShader(prog,vs);gl.attachShader(prog,fs);gl.linkProgram(prog);gl.useProgram(prog);
     const buf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buf);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
     const loc=gl.getAttribLocation(prog,'p');gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
@@ -131,7 +131,8 @@ void main(){
     else{running=true;requestAnimationFrame(loop);}
 
     function cssFallback(){el.classList.add('film-ready');}
-    return {destroy(){dead=true;removeEventListener('resize',resize);try{const x=gl.getExtension('WEBGL_lose_context');x&&x.loseContext();}catch(e){}}};
+    function goTo(i){i=((i%N)+N)%N;clock=i*step+.001;last=performance.now();if(ready)render();}
+    return {count:N,index:()=>Math.floor(clock/step)%N,goTo,next(){goTo(Math.floor(clock/step)+1);},prev(){goTo(Math.floor(clock/step)-1);},destroy(){dead=true;removeEventListener('resize',resize);try{const x=gl.getExtension('WEBGL_lose_context');x&&x.loseContext();}catch(e){}}};
   }
   window.JeckFilm={init:initFilm};
 

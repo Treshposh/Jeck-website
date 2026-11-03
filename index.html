@@ -97,7 +97,13 @@ body{background:#cfe3d4}
 .place .info .row{margin-top:6px}
 .place .top{position:absolute;z-index:3;top:calc(14px + env(safe-area-inset-top,0px));right:max(16px,env(safe-area-inset-right,0px))}
 .place .film-ctrl{bottom:auto;top:calc(16px + env(safe-area-inset-top,0px));right:max(72px,calc(env(safe-area-inset-right,0px) + 72px))}
-.place .film-dots{display:none}
+.place .film-dots{display:flex}
+.cbtn{position:absolute;z-index:4;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);background:rgba(10,42,31,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);color:#fff;display:grid;place-items:center;cursor:pointer;transition:transform .3s var(--spring),background .2s}
+.cbtn:hover{background:rgba(10,42,31,.7);transform:translateY(-50%) scale(1.06)}
+.cbtn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.cbtn.prev{left:max(16px,env(safe-area-inset-left,0px))}.cbtn.next{right:max(16px,env(safe-area-inset-right,0px))}
+@media (max-width:600px){.cbtn{top:42%;width:46px;height:46px}}
+#pCount{color:#fff;opacity:.8;letter-spacing:.1em}
 .place.in .info > *{animation:rise .9s var(--glide) both}
 .place.in .info > *:nth-child(2){animation-delay:.08s}.place.in .info > *:nth-child(3){animation-delay:.16s}.place.in .info > *:nth-child(4){animation-delay:.24s}
 .nogl-msg{position:fixed;inset:0;display:grid;place-items:center;padding:24px;text-align:center}
@@ -149,9 +155,11 @@ body{background:#cfe3d4}
 <section class="place" id="place" hidden aria-live="polite">
   <div id="filmHost"></div>
   <div class="shade"></div>
+  <button class="cbtn prev" id="cPrev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="cbtn next" id="cNext" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
   <div class="top"><button class="xbtn" id="placeClose" aria-label="Back to the map"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
   <div class="info">
-    <span class="k" id="pK"></span>
+    <span class="k"><span id="pK"></span> <span id="pCount"></span></span>
     <h2 id="pT"></h2>
     <p id="pP"></p>
     <div class="row"><button class="btn gold" id="pNext">Next place</button><button class="btn line-w" id="pBack">Back to the map</button></div>
@@ -166,12 +174,14 @@ body{background:#cfe3d4}
 const $=id=>document.getElementById(id);
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const PLACES=[
- {id:'courtyard',name:'Classroom blocks',k:'Classrooms',p:'Three floors of classrooms wrap around a wide, sandy courtyard. This is where the school day begins.',img:'campus',scenes:[['campus',.5,.55]],at:[40,-80]},
- {id:'lab',name:'Science laboratory',k:'Learning',p:'Lab coats on. Science students measure, test and record results in our laboratory, just as real scientists do.',img:'lab',scenes:[['lab',.35,.45]],at:[25,-84]},
- {id:'library',name:'Library',k:'Learning',p:'Shelves of books and a quiet place to read, research and revise. Reading every day is a JECK habit.',img:'library',scenes:[['library',.5,.4]],at:[42,-96]},
- {id:'culture',name:'Cultural day',k:'In front of the main building',p:'Traditional attire, drums and dancing. On cultural day the whole school gathers in front of the main building to celebrate.',img:'cultural',scenes:[['cultural',.5,.6]],at:[58,-80]},
+ {id:'classroom',name:'Classroom block',k:'Classrooms',p:'Bright classrooms, ceiling fans and neat rows of desks. This is where JECK students learn every day, from JSS1 to SSS3.',img:'classroom',scenes:[['classroom',.5,.6],['campus',.5,.55]],at:[25,-72]},
+ {id:'lab',name:'Science laboratory',k:'Learning',p:'Lab coats on. Science students measure, test and record results in our laboratory, just as real scientists do.',img:'lab2',scenes:[['lab2',.4,.45],['lab3',.5,.5],['lab',.35,.45]],at:[25,-90]},
+ {id:'library',name:'Library',k:'Learning',p:'Shelves full of books and a quiet place to read, research and revise. Reading every day is a JECK habit.',img:'library2',scenes:[['library2',.5,.45],['library3',.5,.45]],at:[36,-97]},
+ {id:'complab',name:'Computer lab',k:'Learning',p:'A computer for every student. Here they learn to type, research and build the digital skills they will need for life.',img:'complab1',scenes:[['complab1',.5,.5],['complab2',.5,.5]],at:[50,-97]},
+ {id:'assembly',name:'Assembly ground',k:'Every morning',p:'The school day begins here, with prayer, the national anthem, morning exercise and announcements on the assembly ground.',img:'assembly1',scenes:[['assembly1',.5,.5],['assembly2',.5,.5]],at:[40,-80]},
+ {id:'culture',name:'Cultural day',k:'In front of the main building',p:'Traditional attire, coral beads, drums and dancing. On cultural day the whole school celebrates in front of the main building.',img:'cultural2',scenes:[['cultural2',.5,.4],['cultural3',.5,.5],['cultural4',.5,.4],['cultural',.5,.6]],at:[58,-80]},
  {id:'field',name:'Sports field',k:'Inter-house sports',p:'March-past squads, house banners and races. Inter-house sports day is one of the loudest days of the year.',img:'jasper',scenes:[['jasper',.5,.58],['gamma',.5,.6]],at:[2,-82]},
- {id:'hall',name:'Graduation hall',k:'Graduation day',p:'Green and gold gowns, proud families and a fresh start. Every year our graduating class celebrates here.',img:'graduation',scenes:[['graduation',.5,.4]],at:[61,-62]},
+ {id:'hall',name:'School hall',k:'Talks, worship and graduation',p:'The hall brings everyone together: morning worship, career talks from guests, and every year the graduation ceremony.',img:'hall1',scenes:[['hall1',.5,.45],['hall2',.5,.4],['graduation',.5,.4]],at:[61,-62]},
 ];
 
 /* ---------- three.js map ---------- */
@@ -341,7 +351,7 @@ const roadLabels=[
  {t:'Jeck Close',p:new THREE.Vector3(42,1,-32)},{t:'Elimgbu',p:new THREE.Vector3(-70,14,-60)},
  {t:'JECK Comprehensive College',p:new THREE.Vector3(30,16,-81),cls:'school'}].map(l=>{const e=document.createElement('span');e.className='rlabel'+(l.cls?' '+l.cls:'');e.textContent=l.t;labels.appendChild(e);return Object.assign(l,{e});});
 const pins=PLACES.map((pl,i)=>{const b=document.createElement('button');b.className='pin';b.type='button';b.innerHTML=`<b>${i+1}</b>${pl.name}`;b.addEventListener('click',()=>enter(i));labels.appendChild(b);
-  return {e:b,p:new THREE.Vector3(pl.at[0],pl.id==='field'?3:(pl.id==='hall'?9:pl.id==='courtyard'?2:12),pl.at[1])};});
+  return {e:b,p:new THREE.Vector3(pl.at[0],pl.id==='field'?3:(pl.id==='hall'?9:pl.id==='assembly'?2:12),pl.at[1])};});
 const tmp=new THREE.Vector3();
 function project(list){const w=innerWidth,h=innerHeight;list.forEach(l=>{tmp.copy(l.p).project(camera);const vis=tmp.z<1&&tmp.x>-1.2&&tmp.x<1.2&&tmp.y>-1.2&&tmp.y<1.2;
   l.e.style.visibility=vis?'visible':'hidden';if(vis)l.e.style.transform=`translate(${(tmp.x*.5+.5)*w}px,${(-tmp.y*.5+.5)*h}px) translate(-50%,-50%)`;});}
@@ -408,11 +418,13 @@ function enter(i){
     setTimeout(()=>{
       if(filmCtl){filmCtl.destroy();filmCtl=null;}
       const host=$('filmHost');host.innerHTML='';
-      const el=document.createElement('div');el.className='film';el.dataset.manual='1';el.dataset.dur='12';el.dataset.depth='.038';
+      const el=document.createElement('div');el.className='film';el.dataset.manual='1';el.dataset.dur=pl.scenes.length>1?'7':'12';el.dataset.depth='.038';
       el.setAttribute('role','img');el.setAttribute('aria-label',pl.name);
       el.dataset.scenes=JSON.stringify(pl.scenes.map(([n,fx,fy])=>({img:`assets/${n}.jpg`,depth:`assets/depth/${n}.png`,fx,fy})));
       host.appendChild(el);filmCtl=window.JeckFilm?window.JeckFilm.init(el):null;
-      $('pK').textContent=`Place ${i+1} of ${PLACES.length} · ${pl.k}`;$('pT').textContent=pl.name;$('pP').textContent=pl.p;
+      $('pK').textContent=`Place ${i+1} of ${PLACES.length} · ${pl.k}`;
+      const multi=pl.scenes.length>1;$('cPrev').hidden=!multi;$('cNext').hidden=!multi;
+      clearInterval(countTimer);const upd=()=>{$('pCount').textContent=multi&&filmCtl?`· Photo ${filmCtl.index()+1} of ${pl.scenes.length}`:'';};upd();countTimer=setInterval(upd,300);$('pT').textContent=pl.name;$('pP').textContent=pl.p;
       const P=$('place');P.hidden=false;P.classList.remove('in');void P.offsetWidth;P.classList.add('in');
       seen.add(i);pins[i].e.classList.add('seen');mode='place';
       f.classList.remove('on');
@@ -421,14 +433,18 @@ function enter(i){
   if(mode==='place'){show();return;}
   mode='fly';flyTo(pos,look,1.1,show);
 }
-function leave(){
+function leave(){clearInterval(countTimer);
   if(filmCtl){filmCtl.destroy();filmCtl=null;}
   $('place').hidden=true;$('filmHost').innerHTML='';
   mode='fly';flyTo(orbitPos(orbitTarget,new THREE.Vector3()),new THREE.Vector3(orbitTarget.tx,0,orbitTarget.tz),1.2,()=>mode='campus');
 }
+let countTimer=0;
 $('pNext').onclick=()=>enter((current+1)%PLACES.length);
+$('cPrev').onclick=()=>filmCtl&&filmCtl.prev();$('cNext').onclick=()=>filmCtl&&filmCtl.next();
+{let sx=null;const P=$('place');P.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;sx=e.clientX;});
+ P.addEventListener('pointerup',e=>{if(sx===null)return;const dx=e.clientX-sx;sx=null;if(Math.abs(dx)>50&&filmCtl){dx<0?filmCtl.next():filmCtl.prev();}});}
 $('pBack').onclick=leave;$('placeClose').onclick=leave;
-addEventListener('keydown',e=>{if(e.key==='Escape'){if(!$('place').hidden)leave();else if(!$('stopsPanel').hidden)$('stopsPanel').hidden=true;}});
+addEventListener('keydown',e=>{if(!$('place').hidden&&filmCtl){if(e.key==='ArrowRight')filmCtl.next();if(e.key==='ArrowLeft')filmCtl.prev();}if(e.key==='Escape'){if(!$('place').hidden)leave();else if(!$('stopsPanel').hidden)$('stopsPanel').hidden=true;}});
 const grid=$('stopGrid');
 PLACES.forEach((pl,i)=>{const b=document.createElement('button');b.type='button';b.innerHTML=`<img src="assets/${pl.img}.jpg" alt=""><span>${i+1}. ${pl.name}</span>`;b.onclick=()=>{$('stopsPanel').hidden=true;enter(i);};grid.appendChild(b);});
 $('btnStops').onclick=()=>{$('stopsPanel').hidden=false;};$('stopsClose').onclick=()=>{$('stopsPanel').hidden=true;};
