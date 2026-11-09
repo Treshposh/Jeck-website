@@ -1,0 +1,48 @@
+{
+  "s1": {
+    "f1": "Alumni"
+  },
+  "made_in_jcc": {
+    "f1": "Made in JCC",
+    "f2": "Our graduates go far.",
+    "f3": "Since 2005, JECK graduates have gone on to do very well in their chosen professions and at institutions of higher learning across the world.",
+    "f4": "assets/stephanie.jpg",
+    "f4_alt": "Wogozor Stephanie Rizikwe",
+    "f5": "“JECK Comprehensive College did more than educate me. It transformed my mindset and unlocked my potential.”",
+    "f6": "Wogozor Stephanie Rizikwe",
+    "f7": "Joined in JSS3, 2012"
+  },
+  "stephanie": {
+    "f1": "Stephanie’s story",
+    "f2": "From self-doubt to a Master’s degree.",
+    "f3": "Stephanie joined JECK in September 2012 as a JSS3 student. Before then, negative words at her previous school had left her doubting herself and believing she was not clever enough to succeed.",
+    "f4": "At JECK she found teachers who were supportive, encouraging and genuinely invested in every student, and a lively classroom where healthy competition pushed everyone to do their best. She challenged herself before her Junior WAEC exams, and that decision changed everything. By senior secondary she believed in herself, and reading became a daily habit.",
+    "l1": [
+      {
+        "f1": "2012",
+        "f2": "Joins JECK in JSS3"
+      },
+      {
+        "f1": "UNIPORT",
+        "f2": "Bachelor’s degree in Economics, University of Port Harcourt"
+      },
+      {
+        "f1": "NYSC",
+        "f2": "National Youth Service in Ebonyi State"
+      },
+      {
+        "f1": "MSc",
+        "f2": "Master’s degree in Monetary Economics"
+      },
+      {
+        "f1": "Today",
+        "f2": "Pursuing certification with the Chartered Institute of Personnel Management (CIPM)"
+      }
+    ]
+  },
+  "share": {
+    "f1": "Share your story",
+    "f2": "Are you a JECK graduate?",
+    "f3": "We would love to hear where life has taken you. Send your story and a photo to jeckcollege@yahoo.com, or message us on WhatsApp."
+  }
+}

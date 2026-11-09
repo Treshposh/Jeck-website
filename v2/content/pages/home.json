@@ -1,0 +1,95 @@
+{
+  "s1": {
+    "f1": "JECK Comprehensive College",
+    "f2": "A co-educational secondary school for boys and girls from JSS1 to SSS3, founded in September 2005 in Elimgbu, Port Harcourt."
+  },
+  "s2": {
+    "f1": "assets/proprietress-new.jpg",
+    "f1_alt": "Mrs. Onyebuchie Augustina, Proprietress",
+    "f2": "Welcome from the Proprietress",
+    "f3": "A serene place to learn, and to grow.",
+    "f4": "Welcome to JECK Comprehensive College. Since 2005 our aim has been simple: to raise a total child, sound in spirit, in character, in body and in mind. Here every student is known by name, encouraged to aim higher and supported by graduate teachers who truly care.",
+    "f5": "Mrs. Onyebuchie Augustina",
+    "f6": "Proprietress, JECK Comprehensive College"
+  },
+  "s3": {
+    "f1": "At JECK",
+    "f2": "Life and learning.",
+    "f3": "Practicals in the laboratory, quiet hours in the library, march-past on the field and trips out into the world. Every day at JECK is full."
+  },
+  "s4": {
+    "l1": [
+      {
+        "f1": "Visit us",
+        "f2": "Come and see JECK for yourself.",
+        "f3": "Visit on any school day between 8am and 5pm. Tour the classrooms, laboratory and library, and meet our teachers."
+      },
+      {
+        "f1": "Admissions",
+        "f2": "Start your journey.",
+        "f3": "Admissions are open for JSS1 and other classes where space is available. Collect a form, sit the entrance exam and join us."
+      },
+      {
+        "f1": "Discover",
+        "f2": "Made in JCC.",
+        "f3": "Our graduates are economists, engineers and professionals across Nigeria and beyond. Read how JECK shaped them."
+      }
+    ]
+  },
+  "s5": {
+    "f1": "Our mission",
+    "f2": "To raise well-rounded students who fear God and show disciplined attitudes, built on solid academic and moral foundations, by providing a serene learning environment and quality teaching and learning.",
+    "f3": "Our vision",
+    "f4": "To raise a total child who is sound spiritually, morally, physically and academically."
+  },
+  "s6": {
+    "f1": "Our values",
+    "f2": "Fear of God, discipline, excellence, community.",
+    "f3": "Our vision is to raise a total child who is sound spiritually, morally, physically and academically. These four values guide every lesson, every assembly and every match.",
+    "l1": [
+      {
+        "f1": "Fear of God",
+        "f2": "Faith and good conscience guide how we learn and how we treat people."
+      },
+      {
+        "f1": "Discipline",
+        "f2": "Punctuality, self-control and respect, every single day."
+      },
+      {
+        "f1": "Excellence",
+        "f2": "We aim high and help each student reach their best."
+      },
+      {
+        "f1": "Community",
+        "f2": "Healthy competition and real friendship, so no one is left behind."
+      }
+    ]
+  },
+  "s7": {
+    "f1": "Latest news",
+    "f2": "assets/cultural.jpg",
+    "f2_alt": "Students performing a cultural dance",
+    "f3": "Culture",
+    "f4": "Cultural Day fills the courtyard with colour",
+    "f5": "Students in traditional attire performed dances from across Nigeria for parents and guests.",
+    "f6": "Recent stories",
+    "f7": "assets/graduation.jpg",
+    "f7_alt": "JECK graduates in green and gold gowns",
+    "f8": "Made in JCC",
+    "f9": "“JECK transformed my mindset”",
+    "f10": "Stephanie joined in JSS3. Today she holds a Master’s in Monetary Economics."
+  },
+  "s8": {
+    "f1": "Find us",
+    "f2": "No 5 Jeck Close, Elimgbu.",
+    "f3": "Just off Oro-Igwe Road in Elimgbu, Port Harcourt. Visit us between 8am and 5pm."
+  },
+  "s9": {
+    "f1": "Address",
+    "f2": "No 5 Jeck Close, off Oro-Igwe Road, Elimgbu, Port Harcourt, Rivers State",
+    "f3": "Phone and WhatsApp",
+    "f4": "0913 070 4152\n0806 873 8164",
+    "f5": "Email and hours",
+    "f6": "jeckcollege@yahoo.com\n8am – 5pm"
+  }
+}

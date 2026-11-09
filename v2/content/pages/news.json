@@ -1,0 +1,72 @@
+{
+  "s1": {
+    "f1": "News"
+  },
+  "latest": {
+    "f1": "Latest news",
+    "f2": "What’s happening at JECK.",
+    "l1": [
+      {
+        "f1": "assets/cultural.jpg",
+        "f1_alt": "",
+        "f2": "Culture",
+        "f3": "Cultural Day fills the courtyard with colour",
+        "f4": "Students in traditional attire performed dances from across Nigeria for parents and guests.",
+        "link": "school-life.html#culture"
+      },
+      {
+        "f1": "assets/graduation.jpg",
+        "f1_alt": "",
+        "f2": "Graduation",
+        "f3": "Celebrating our graduating class",
+        "f4": "Our final-year students walked out in green and gold, surrounded by family and teachers.",
+        "link": "school-life.html#graduation"
+      },
+      {
+        "f1": "assets/gamma.jpg",
+        "f1_alt": "",
+        "f2": "Sport",
+        "f3": "March-past at inter-house sports",
+        "f4": "House squads paraded across the field after weeks of practice.",
+        "link": "school-life.html#houses"
+      },
+      {
+        "f1": "assets/lab.jpg",
+        "f1_alt": "",
+        "f2": "Learning",
+        "f3": "Practicals in the science laboratory",
+        "f4": "Science students put their lessons to the test with hands-on experiments.",
+        "link": "learning.html#laboratory"
+      }
+    ]
+  },
+  "stories": {
+    "f1": "Stories",
+    "f2": "Stories from our community.",
+    "l1": [
+      {
+        "f1": "assets/stephanie.jpg",
+        "f1_alt": "",
+        "f2": "Made in JCC",
+        "f3": "“JECK transformed my mindset”",
+        "f4": "Stephanie joined in JSS3 in 2012. Today she holds a Master’s in Monetary Economics.",
+        "link": "alumni.html#stephanie"
+      },
+      {
+        "f1": "assets/proprietress-new.jpg",
+        "f1_alt": "",
+        "f2": "Welcome",
+        "f3": "A word from our Proprietress",
+        "f4": "Mrs. Onyebuchie Augustina on raising a total child.",
+        "link": "welcome.html#message"
+      }
+    ]
+  },
+  "yearbook": {
+    "f1": "Yearbook",
+    "f2": "The Ascenders’ 2026 yearbook.",
+    "f3": "assets/faces.jpg",
+    "f3_alt": "Portraits of the class of 2026",
+    "f4": "The class of 2026, the Ascenders, celebrated their years at JECK in a yearbook full of memories, messages and stories, including our Made in JCC alumni features."
+  }
+}

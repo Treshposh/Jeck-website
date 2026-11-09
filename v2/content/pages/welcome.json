@@ -1,0 +1,100 @@
+{
+  "s1": {
+    "f1": "Welcome"
+  },
+  "message": {
+    "f1": "assets/proprietress-new.jpg",
+    "f1_alt": "Mrs. Onyebuchie Augustina",
+    "f2": "Welcome from the Proprietress",
+    "f3": "Welcome to JECK Comprehensive College.",
+    "f4": "Since we opened our doors in September 2005, our aim has been simple: to raise a total child, sound in spirit, in character, in body and in mind. Here every student is known by name, encouraged to aim higher and supported by graduate teachers who truly care.",
+    "f5": "We believe discipline and excellence go hand in hand, and that a serene, God-fearing environment brings out the best in every child. Our graduates are proof of it. They are doing well in their professions and at universities across Nigeria and around the world.",
+    "f6": "I warmly invite you to visit us, meet our teachers and see our students at work. We would be delighted to welcome your family to JECK.",
+    "f7": "Mrs. Onyebuchie Augustina",
+    "f8": "Proprietress, JECK Comprehensive College"
+  },
+  "leadership": {
+    "f1": "Our leadership",
+    "f2": "The people who lead JECK.",
+    "f3": "Our leaders share one goal: to give every child a serene place to learn and grow, under the theme **Aspiring for a greater future**.",
+    "l1": [
+      {
+        "f1": "assets/director.jpg",
+        "f1_alt": "Engineer Dennis Onyebuchie",
+        "f2": "Director",
+        "f3": "Engr. Dennis Onyebuchie",
+        "f4": "Guides the school’s direction and growth, from its buildings and facilities to the standards every classroom is held to."
+      },
+      {
+        "f1": "assets/proprietress-new.jpg",
+        "f1_alt": "Mrs. Onyebuchie Augustina",
+        "f2": "Proprietress",
+        "f3": "Mrs. Onyebuchie Augustina",
+        "f4": "Leads the school’s vision of academic and moral excellence, and the care given to every student."
+      },
+      {
+        "f1": "assets/principal.jpg",
+        "f1_alt": "Mr. Anichi Samson",
+        "f2": "Principal",
+        "f3": "Mr. Anichi Samson",
+        "f4": "Oversees teaching, learning and discipline day to day, working with teachers and parents so every student does their best."
+      }
+    ],
+    "f4": "assets/aspiring.jpg",
+    "f4_alt": "Aspiring for a greater future"
+  },
+  "mission": {
+    "f1": "Mission and vision",
+    "f2": "What we are here to do.",
+    "f3": "Our mission",
+    "f4": "To raise well-rounded students who fear God and show disciplined attitudes, built on solid academic and moral foundations, by providing a serene learning environment and quality teaching and learning.",
+    "f5": "Our vision",
+    "f6": "To raise a total child who is sound spiritually, morally, physically and academically."
+  },
+  "values": {
+    "f1": "Our values",
+    "f2": "What every JECK student learns to live by.",
+    "l1": [
+      {
+        "f1": "Fear of God",
+        "f2": "Faith and good conscience guide how we learn and how we treat people."
+      },
+      {
+        "f1": "Discipline",
+        "f2": "Punctuality, self-control and respect, every single day."
+      },
+      {
+        "f1": "Excellence",
+        "f2": "We aim high and help each student reach their best."
+      },
+      {
+        "f1": "Community",
+        "f2": "Healthy competition and real friendship, so no one is left behind."
+      }
+    ]
+  },
+  "history": {
+    "f1": "Our history",
+    "f2": "Twenty years of excellence.",
+    "f3": "JECK Comprehensive College was founded in September 2005 at No 5 Jeck Close, off Oro-Igwe Road, Elimgbu, Port Harcourt.",
+    "l1": [
+      {
+        "f1": "2005",
+        "f2": "JECK Comprehensive College opens its doors in September as a co-educational secondary school."
+      },
+      {
+        "f1": "Today",
+        "f2": "Junior and senior secondary classes from JSS1 to SSS3, taught by graduate teachers on a standard curriculum for Nigeria and beyond."
+      },
+      {
+        "f1": "2026",
+        "f2": "The Ascenders, the class of 2026, celebrate in their yearbook."
+      }
+    ]
+  },
+  "crest": {
+    "f1": "Our crest",
+    "f2": "Green, gold and an open book.",
+    "f3": "The JECK crest carries the school’s colours and the open book of learning, with our motto, **Academic & Moral Excellence**, on the ribbon below."
+  }
+}
