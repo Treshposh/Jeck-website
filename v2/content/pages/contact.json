@@ -1,0 +1,42 @@
+{
+  "s1": {
+    "f1": "Contact"
+  },
+  "details": {
+    "f1": "Contact details",
+    "f2": "We would love to hear from you.",
+    "l1": [
+      {
+        "f1": "Address",
+        "f2": "No 5 Jeck Close, off Oro-Igwe Road, Elimgbu, Port Harcourt, Rivers State"
+      },
+      {
+        "f1": "Phone and WhatsApp",
+        "f2": "0913 070 4152\n0806 873 8164"
+      },
+      {
+        "f1": "Email",
+        "f2": "jeckcollege@yahoo.com"
+      },
+      {
+        "f1": "Official hours",
+        "f2": "8:00am – 5:00pm"
+      }
+    ]
+  },
+  "enquiry": {
+    "f1": "Send an enquiry",
+    "f2": "Ask us anything.",
+    "f3": "Your message is ready on WhatsApp."
+  },
+  "visitors": {
+    "f1": "Visitor information",
+    "f2": "Visiting the school.",
+    "f3": "Visitors are welcome during official hours, 8am to 5pm. Please call or WhatsApp ahead so we can welcome you properly."
+  },
+  "directions": {
+    "f1": "Directions",
+    "f2": "Getting here.",
+    "f3": "JECK is at No 5 Jeck Close, just off Oro-Igwe Road in Elimgbu, Port Harcourt."
+  }
+}

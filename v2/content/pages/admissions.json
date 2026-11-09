@@ -1,0 +1,117 @@
+{
+  "s1": {
+    "f1": "Admissions"
+  },
+  "process": {
+    "f1": "Admissions process",
+    "f2": "Join the JECK family.",
+    "f3": "Admissions are open. We would love to meet your child.",
+    "l1": [
+      {
+        "f1": "Collect the form",
+        "f2": "Pick up an admission form from the school office."
+      },
+      {
+        "f1": "Sit the entrance exam",
+        "f2": "Your child writes a short exam in English and Mathematics."
+      },
+      {
+        "f1": "Meet with us",
+        "f2": "Visit with a parent or guardian for a short, friendly interview."
+      },
+      {
+        "f1": "Resume school",
+        "f2": "Complete registration and join your new class at the start of term."
+      }
+    ]
+  },
+  "visit": {
+    "f1": "Book a school visit",
+    "f2": "Come and see for yourself.",
+    "f3": "Visit on any school day between 8am and 5pm. Tour the classrooms, laboratory and library, and meet our teachers."
+  },
+  "entry": {
+    "f1": "Entry points",
+    "f2": "When to join.",
+    "f3": "JSS1 entry",
+    "f4": "Starting secondary school",
+    "f5": "For pupils finishing primary school. Children sit the entrance exam in English and Mathematics before joining JSS1.",
+    "f6": "SSS1 entry",
+    "f7": "Starting senior secondary",
+    "f8": "For students who have completed JSS3 and the BECE. New students choose the Science, Arts or Commercial stream.",
+    "f9": "Students may also join other classes where space is available."
+  },
+  "fees": {
+    "f1": "Fees",
+    "f2": "Fees and contact.",
+    "l1": [
+      {
+        "f1": "School fees",
+        "f2": "Contact the school office for the current fees"
+      },
+      {
+        "f1": "Entrance exam",
+        "f2": "Call the school office to book a date"
+      },
+      {
+        "f1": "Official hours",
+        "f2": "8:00am – 5:00pm"
+      },
+      {
+        "f1": "Phone",
+        "f2": "0913 070 4152, 0806 873 8164"
+      },
+      {
+        "f1": "Email",
+        "f2": "jeckcollege@yahoo.com"
+      }
+    ]
+  },
+  "documents": {
+    "f1": "What to bring",
+    "f2": "Documents for registration.",
+    "l1": [
+      {
+        "text": "Completed admission form"
+      },
+      {
+        "text": "Birth certificate or age declaration"
+      },
+      {
+        "text": "Last school report or result"
+      },
+      {
+        "text": "Recent passport photographs"
+      },
+      {
+        "text": "Transfer letter (for students joining from another school)"
+      }
+    ]
+  },
+  "faq": {
+    "f1": "Admissions FAQs",
+    "f2": "Good to know.",
+    "l1": [
+      {
+        "f1": "Is JECK a boys’ or girls’ school?",
+        "f2": "Neither. JECK is co-educational, so boys and girls learn together from JSS1 to SSS3."
+      },
+      {
+        "f1": "Can my child join in the middle of the session?",
+        "f2": "Yes, where there is space in the class."
+      },
+      {
+        "f1": "Which exams do students prepare for?",
+        "f2": "Junior students sit the BECE (Junior WAEC) in JSS3. Senior students prepare for WAEC and NECO in SSS3."
+      },
+      {
+        "f1": "Is there a school bus?",
+        "f2": "Yes. Call or WhatsApp 0913 070 4152 for routes and to register."
+      },
+      {
+        "f1": "Can I visit before applying?",
+        "f2": "Of course. Come on any school day between 8am and 5pm, or [book a visit on WhatsApp](https://wa.me/2349130704152?text=Hello%20JECK%20Comprehensive%20College%2C%20I%20would%20like%20to%20book%20a%20school%20visit.)."
+      }
+    ]
+  }
+}

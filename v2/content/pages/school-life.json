@@ -1,0 +1,182 @@
+{
+  "s1": {
+    "f1": "School Life"
+  },
+  "assembly": {
+    "f1": "Assembly",
+    "f2": "Every day starts together.",
+    "f3": "Each morning the whole school gathers on the assembly ground for prayer, the national anthem, morning exercise and the day’s announcements. It sets the tone for a focused, disciplined day."
+  },
+  "houses": {
+    "f1": "Houses and sport",
+    "f2": "March-past, races and house colours.",
+    "f3": "Every student belongs to a house, and inter-house sports is one of the highlights of the year. Students practise their march-past for weeks, cheer for their teammates and wear their house colours with pride.",
+    "l1": [
+      {
+        "f1": "Athletics",
+        "f2": "Races and relays on the school field."
+      },
+      {
+        "f1": "March-past",
+        "f2": "Each house trains its own squad and banner."
+      },
+      {
+        "f1": "Team spirit",
+        "f2": "Friendly but fierce competition between the houses."
+      }
+    ]
+  },
+  "culture": {
+    "f1": "Arts and culture",
+    "f2": "Proud of where we come from.",
+    "f3": "On cultural day students dress in traditional attire and perform dances from across Nigeria while parents and guests cheer. Drama, debate and talent shows give every student a stage all year round."
+  },
+  "character": {
+    "f1": "Faith and character",
+    "f2": "Growing in spirit and in manners.",
+    "f3": "In line with our mission, students grow in the fear of God and in good character, learning honesty, respect and self-discipline."
+  },
+  "hall": {
+    "f1": "School hall",
+    "f2": "Where we come together.",
+    "f3": "The school hall hosts morning worship, career talks from visiting professionals, prize-giving and the yearly graduation ceremony."
+  },
+  "excursions": {
+    "f1": "Excursions",
+    "f2": "Lessons that leave the classroom.",
+    "f3": "assets/excursion.jpg",
+    "f3_alt": "JECK students and a teacher on an educational trip",
+    "f4": "Educational trips show students how what they learn is used in the real world. They come back with stories, questions and new ambitions."
+  },
+  "graduation": {
+    "f1": "Graduation",
+    "f2": "Proud moments, every year.",
+    "f3": "Each year our graduating class walks out in green and gold, ready for university and the world, surrounded by family, teachers and friends."
+  },
+  "bus": {
+    "f1": "School bus",
+    "f2": "Safely to school, on time.",
+    "f3": "The JECK school bus brings students to school safely and on time. To register your child, call or WhatsApp the school office on 0913 070 4152."
+  },
+  "gallery": {
+    "f1": "Gallery",
+    "f2": "Moments from around JECK.",
+    "l1": [
+      {
+        "f1": "assets/classroom.jpg",
+        "f1_alt": "A classroom",
+        "f2": "A classroom"
+      },
+      {
+        "f1": "assets/lab2.jpg",
+        "f1_alt": "Science practicals",
+        "f2": "Science practicals"
+      },
+      {
+        "f1": "assets/lab.jpg",
+        "f1_alt": "Laboratory",
+        "f2": "Laboratory"
+      },
+      {
+        "f1": "assets/lab3.jpg",
+        "f1_alt": "Our laboratory",
+        "f2": "Our laboratory"
+      },
+      {
+        "f1": "assets/library2.jpg",
+        "f1_alt": "Choosing books",
+        "f2": "Choosing books"
+      },
+      {
+        "f1": "assets/library.jpg",
+        "f1_alt": "Students in the library",
+        "f2": "Students in the library"
+      },
+      {
+        "f1": "assets/library3.jpg",
+        "f1_alt": "The library",
+        "f2": "The library"
+      },
+      {
+        "f1": "assets/complab1.jpg",
+        "f1_alt": "Computer lab",
+        "f2": "Computer lab"
+      },
+      {
+        "f1": "assets/complab2.jpg",
+        "f1_alt": "Computer lessons",
+        "f2": "Computer lessons"
+      },
+      {
+        "f1": "assets/assembly1.jpg",
+        "f1_alt": "Morning assembly",
+        "f2": "Morning assembly"
+      },
+      {
+        "f1": "assets/assembly2.jpg",
+        "f1_alt": "Morning exercise",
+        "f2": "Morning exercise"
+      },
+      {
+        "f1": "assets/hall1.jpg",
+        "f1_alt": "Worship in the hall",
+        "f2": "Worship in the hall"
+      },
+      {
+        "f1": "assets/hall2.jpg",
+        "f1_alt": "Career talk",
+        "f2": "Career talk"
+      },
+      {
+        "f1": "assets/cultural2.jpg",
+        "f1_alt": "Cultural day",
+        "f2": "Cultural day"
+      },
+      {
+        "f1": "assets/cultural3.jpg",
+        "f1_alt": "Traditional dance",
+        "f2": "Traditional dance"
+      },
+      {
+        "f1": "assets/cultural4.jpg",
+        "f1_alt": "Cultural day",
+        "f2": "Cultural day"
+      },
+      {
+        "f1": "assets/cultural.jpg",
+        "f1_alt": "Cultural dance",
+        "f2": "Cultural dance"
+      },
+      {
+        "f1": "assets/graduation.jpg",
+        "f1_alt": "Graduation",
+        "f2": "Graduation"
+      },
+      {
+        "f1": "assets/jasper.jpg",
+        "f1_alt": "Jasper House",
+        "f2": "Jasper House"
+      },
+      {
+        "f1": "assets/gamma.jpg",
+        "f1_alt": "March-past",
+        "f2": "March-past"
+      },
+      {
+        "f1": "assets/excursion.jpg",
+        "f1_alt": "Excursion",
+        "f2": "Excursion"
+      },
+      {
+        "f1": "assets/campus.jpg",
+        "f1_alt": "Our campus",
+        "f2": "Our campus"
+      },
+      {
+        "f1": "assets/events.jpg",
+        "f1_alt": "Events",
+        "f2": "Events"
+      }
+    ]
+  }
+}
