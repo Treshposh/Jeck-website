@@ -48,7 +48,7 @@
       e.preventDefault();const f=new FormData(pop);
       const lines=['Hello JECK Comprehensive College,','',`My name is ${f.get('name')||''}. I am interested in ${f.get('topic')||'admission'}.`];
       if(f.get('message'))lines.push('',f.get('message'));
-      const url='https://wa.me/2349130704152?text='+encodeURIComponent(lines.join('\n'));
+      const url='https://wa.me/'+(window.JECK_WA||'2349130704152')+'?text='+encodeURIComponent(lines.join('\n'));
       const alt=$('waAlt');alt.href=url;alt.hidden=false;
       const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
     });
@@ -67,7 +67,7 @@
       if(f.get('message'))lines.push('',f.get('message'));
       if(f.get('phone'))lines.push('','Phone: '+f.get('phone'));
       if(f.get('email'))lines.push('Email: '+f.get('email'));
-      const url='https://wa.me/2349130704152?text='+encodeURIComponent(lines.join('\n'));
+      const url='https://wa.me/'+(window.JECK_WA||'2349130704152')+'?text='+encodeURIComponent(lines.join('\n'));
       $('waGo').href=url;$('result').hidden=false;
       const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
     });

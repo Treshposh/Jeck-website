@@ -527,3 +527,10 @@ button.wa-fab{border:0;cursor:pointer}
 .gallery2 figure:hover img{transform:scale(1.05)}
 .gallery2 figcaption{position:absolute;left:10px;bottom:10px;background:rgba(15,59,43,.82);color:var(--white);font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px}
 @media (max-width:480px){.gallery2{grid-template-columns:1fr 1fr;gap:8px}.gallery2 figcaption{font-size:11.5px}}
+
+/* announcement bar, switched on from the admin panel */
+.notice-bar{display:block;background:var(--sun);color:var(--green);text-align:center;font-weight:600;font-size:14px;line-height:1.4;text-decoration:none;
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));position:relative;z-index:60}
+.notice-bar span{display:inline-block;max-width:70ch}
+a.notice-bar span{border-bottom:2px solid var(--green);padding-bottom:1px}
+a.notice-bar:hover span{border-bottom-color:transparent}
